@@ -1,0 +1,17 @@
+{
+  "name": "Redmine Shuttle",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "A helper application to Redmine that allows you to search and be redirected to a predefined Redmine location from the URL bar.",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "omnibox": { "keyword" : "#" },
+  "permissions": [
+    "tabs",
+    "vvv.cantemo.com"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
