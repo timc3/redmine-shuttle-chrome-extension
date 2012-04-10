@@ -34,25 +34,19 @@ q:before, q:after {
 	content: none;
 }
 
-/* remember to define focus styles! */
 :focus {
 	outline: 0;
 }
-
-/* remember to highlight inserts somehow! */
 ins {
 	text-decoration: none;
 }
 del {
 	text-decoration: line-through;
 }
-
-/* tables still need 'cellspacing="0"' in the markup */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* ! Default styles */
 
 :focus { outline: 1px dotted #999; }
 a { border-bottom: 1px solid #000; color: #000; text-decoration: none; }
@@ -69,10 +63,50 @@ em { font-style: italic; }
 h1 { font-size: 29px; line-height: 35px; margin-bottom: 5px; }
 h2 { font-size: 21px; line-height: 25px; margin-bottom: 15px; }
 h3 { font-size: 19px; line-height: 21px; margin: 20px 0 19px 0; }
-input[type=email], input[type=search], input[type=text], input[type=url], input:not([type]), textarea { background-color: #fff; border: 1px inset #ccc; color: #000; cursor: text; padding: 5px; width: 20em; }
-input[type=submit] { cursor: pointer; }
+input[type=email], input[type=search], input[type=text], input[type=url], input:not([type]), textarea { background-color: #fff; border: 1px inset #ccc; color: #000; cursor: text; padding: 5px; width: 20em; font-size:110%;}
+input[type=submit] { cursor: pointer;}
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button { 
+	-webkit-box-align: center;
+	background-color: #7FBF4D;
+	background-image: -webkit-linear-gradient(top, #7FBF4D, #63A62F);
+	border: 1px solid #63A62F;
+	border-bottom: 1px solid #5B992B;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+	box-shadow: inset 0 1px 0 0 #96ca6d;
+	color: white;
+	font: bold 14px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	line-height: 1;
+	padding: 7px 0 8px 0;
+	text-align: center;
+	text-shadow: 0 -1px 0 #4C9021;
+	width:150px;
+}
+button:hover {
+    background-color: #76b347;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));
+    background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: linear-gradient(top, #76b347, #5e9e2e);
+    -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+    -moz-box-shadow: inset 0 1px 0 0 #8dbf67;
+    box-shadow: inset 0 1px 0 0 #8dbf67;
+    cursor: pointer; 
+}
+button:active {
+    border: 1px solid #5b992b;
+    border-bottom: 1px solid #538c27;
+    -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+    -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+    box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; 
+}
+
 kbd, pre { font: 14px/1 consolas, "lucida console", monaco, monospace; }
-label { clear: both; float: left; margin-top: 5px; width: 175px; }
+label { clear: both; float: left; margin-top: 5px; width: 300px; display:inline-block;}
+.mono { margin-left: 321px;}
 li ol { list-style-type: none; }
 li ol, li ul { margin-bottom: 0; margin-top: 0; }
 ol { list-style-type: decimal; }
@@ -102,11 +136,11 @@ tr:nth-child(odd) td { background: -webkit-gradient(linear, left top, left botto
 
 #content { margin: 20px 10px; }
 
-#header { background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)); border-color: #ddd; border-style: solid; border-width: 0 1px 1px 1px; padding: 10px; text-shadow: 0 1px 0 #fff; }
+#header { background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)); border-color: #ddd; border-style: solid; border-width: 0 1px 1px 1px; padding: 16px; text-shadow: 0 1px 0 #fff; }
 #header:after { clear: both; content: ""; display: block; height: 0; overflow: hidden; visibility: hidden; }
-#header h1 {  }
+#header h1 { margin: 8px 0}
+#header p { font-size: 12px;}
 label { text-decoration: none; }
 #buttons, #notification { margin-top: 20px; }
-#header h1 { margin-bottom: 0; }
 #notification { max-width: 500px; }
 div#main {padding:16px;}

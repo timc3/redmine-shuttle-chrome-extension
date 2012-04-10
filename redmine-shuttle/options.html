@@ -8,22 +8,16 @@
   <body>
     <div id="header">
       <h1>Redmine Shuttle Options</h1>
+      <p><em>Setup the options here for which site to be redirected to. The HotKey combo is set to "<strong>RS</strong>".</em></p>
     </div>
     <div id="main">
-      <p>Setup the options here for deciding which key is the hotkey and which site to be redirected to.</p>
       <ul>
         <li>
-          <label for="hotkey">HotKey for application (default is #)
-            <input type="text" id="hotkey" name="hotkey" placeholder="" value="">
-          </label>
+          <label for="redmineurl">URL for Redmine application (No default)</label>
+          <input type="text" id="redmineurl" name="redmineurl" placeholder="http://www.example.com" value="">
         </li>
-        <li>
-          <label for="redmineurl">URL for Redmine application (No default)
-            <input type="text" id="redmineurl" name="redmineurl" placeholder="http://www.example.com" value="">
-          </label>          
-        </li>
-        <li>
-          <button id="save">Save</button>    
+        <li class="mono">
+          <button id="save">Save</button>
         </li>
       </ul>
       <div id="status"></div>

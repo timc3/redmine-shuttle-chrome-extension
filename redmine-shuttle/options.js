@@ -1,7 +1,5 @@
 function save_options() {
-  var hotkey = document.getElementById("hotkey").value;
   var redmineurl = document.getElementById("redmineurl").value;
-  localStorage["hotkey"] = hotkey;
   localStorage["redmineurl"] = redmineurl;
 
   // Update status to let user know options were saved.
@@ -14,17 +12,11 @@ function save_options() {
 
 // Restores state to saved value from localStorage.
 function restore_options() {
-  var hotkey = localStorage["hotkey"];
   var redmineurl = localStorage["redmineurl"];
-  if (!hotkey) {
-    return;
-  }
   if (!redmineurl) {
     return;
   }
-  var hotkeyinput = document.getElementById("hotkey");
   var redmineurlinput = document.getElementById("redmineurl");
-  hotkeyinput.value = hotkey;
   redmineurlinput.value = redmineurl;
 }
 
