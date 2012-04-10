@@ -1,22 +1,25 @@
 function search(query, callback) {
+  var url = '';
+  var redmineurl = getUrl();
   if (/^#/.test(query)) {
     query = query.substring('#'.length);
-    url = "http://vvv.cantemo.com/issues/" + query;
+    url = redmineurl + "/issues/" + query;
   } else if (/^project:/.test(query)) {
-    url = "http://vvv.cantemo.com/projects/" + query.substring('project:'.length) + '"';
+    url = redmineurl + "/projects/" + query.substring('project:'.length) + '"';
   } else {
     query = '"' + query + '"';
-    url = "http://vvv.cantemo.com/search?q=" + query;
+    url = redmineurl + "/search?q=" + query;
   }
   navigate(url);
 }
 
-function getUrl(path, line) {
-  console.log('getURL');
-  var url = "http://vvv.cantemo.com/" + path;
-  if (line)
-    url += "&l=" + line;
-  return url;
+function getUrl() {
+  var redmineurl = localStorage["redmineurl"];
+  if (!redmineurl) {
+    console.log('Please set a Redmine URL in Redmine Shuttle');
+    return;
+  }
+  return redmineurl;
 }
 
 function navigate(url) {

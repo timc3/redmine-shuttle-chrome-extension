@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redmine Shuttle Options</title>
+    <script src="options.js"></script>
+    <link href="options.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Redmine Shuttle Options</h1>
+    </div>
+    <div id="main">
+      <p>Setup the options here for deciding which key is the hotkey and which site to be redirected to.</p>
+      <ul>
+        <li>
+          <label for="hotkey">HotKey for application (default is #)
+            <input type="text" id="hotkey" name="hotkey" placeholder="" value="">
+          </label>
+        </li>
+        <li>
+          <label for="redmineurl">URL for Redmine application (No default)
+            <input type="text" id="redmineurl" name="redmineurl" placeholder="http://www.example.com" value="">
+          </label>          
+        </li>
+        <li>
+          <button id="save">Save</button>    
+        </li>
+      </ul>
+      <div id="status"></div>
+    </div>
+  </body>
+</html>
