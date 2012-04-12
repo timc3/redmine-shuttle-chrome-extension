@@ -5,7 +5,7 @@ function search(query, callback) {
     query = query.substring('#'.length);
     url = redmineurl + "/issues/" + query;
   } else if (/^project:/.test(query)) {
-    url = redmineurl + "/projects/" + query.substring('project:'.length) + '"';
+    url = redmineurl + "/projects/" + query.substring('project:'.length);
   } else {
     query = '"' + query + '"';
     url = redmineurl + "/search?q=" + query;
