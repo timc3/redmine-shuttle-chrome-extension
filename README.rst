@@ -23,7 +23,7 @@ At the moment this is not published to the Google Chrome store, so download/grab
 
 Or if you are going to install the CRX
 
-1. Click on the .crx file
+1. Click on the https://github.com/downloads/timc3/redmine-shuttle-chrome-extension/redmine-shuttle.crx file
 2. Discard the warning.
 
 Setup
