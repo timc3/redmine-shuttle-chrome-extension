@@ -15,25 +15,25 @@ Installation
 ------------
 At the moment this is not published to the Google Chrome store, so download/grab the source or install the CRX file straight from here.
 
- # Open Chrome
- # Open the extensions panel
- # Check developer mode
- # Choose "Load unpacked extensions"
- # Navigate the place that you download the extension and choose it.
+1. Open Chrome
+2. Open the extensions panel
+3. Check developer mode
+4. Choose "Load unpacked extensions"
+5. Navigate the place that you download the extension and choose it.
 
 Or if you are going to install the CRX
 
- # Click on the .crx file
- # Discard the warning.
+1. Click on the .crx file
+2. Discard the warning.
 
 Setup
 ------
 
 Once install you must point the plugin to your Redmine installation. 
 
- # Right click or option click on the logo and select options.
- # Enter in the URL to your Redmine installation (no trailing slash is needed). 
- # Save.
+1. Right click or option click on the logo and select options.
+2. Enter in the URL to your Redmine installation (no trailing slash is needed). 
+3. Save.
 
 Usage
 ------
