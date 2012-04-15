@@ -55,7 +55,7 @@ a abbr { border-bottom-style: none; }
 abbr { border-bottom: 1px dotted #000; cursor: help; }
 blockquote { margin: 20px 0; padding: 10px; }
 blockquote, tr:nth-child(even) td { background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)); border-bottom: 1px solid #ccc; text-shadow: 0 1px 0 #fff; }
-body { background-color: #fff;}
+body { background-color: #fff;} 
 body, input, textarea { font: 14px/1 "Lucida Grande", "Lucida Sans", Arial, Helvetica, sans-serif; }
 dd, dt, h3, h4, li, p { line-height: 20px; }
 dt, h1, h2, h3, h4, th { font-family: "Helvetica Neue", Helvetica, verdana, "bitstream vera sans", sans-serif; font-weight: normal; letter-spacing: 1px; text-transform: uppercase; }
@@ -138,6 +138,7 @@ tr:nth-child(odd) td { background: -webkit-gradient(linear, left top, left botto
 
 #header { background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)); border-color: #ddd; border-style: solid; border-width: 0 1px 1px 1px; padding: 16px; text-shadow: 0 1px 0 #fff; }
 #header:after { clear: both; content: ""; display: block; height: 0; overflow: hidden; visibility: hidden; }
+#header img {float:left;margin-right:16px;margin-top:8px;}
 #header h1 { margin: 8px 0}
 #header p { font-size: 12px;}
 label { text-decoration: none; }
